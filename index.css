@@ -1,0 +1,455 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+#outer{
+    width: 100%;
+    height: 420px;
+    background-image: url(./Images/Zomato_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media screen and (max-width:800px) {
+    #nav a{
+        display: none;
+    }
+}
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav_left{
+    font-size: 15px;
+    padding: 23px;
+}
+.nav_right{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+.nav_right_con{
+    font-size: 19px;
+    padding: 23px;
+}
+#Bname{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight:bold;
+    font-style: italic;
+}
+.Zomato{
+    padding: 20px;
+}
+#dis{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+
+.search_box{
+    padding: 27px;
+   display: flex;
+   justify-content: center;
+}
+
+.input1{
+    height: 55px;
+    width: 780px;
+    border-radius: 8px;
+    border: none; 
+    padding-left: 35px;
+    position: absolute;
+    font-size: 18px;
+}
+
+.input1::placeholder,.input2::placeholder{
+    font-size: 15px;
+}
+
+.input2{
+    height: 55px;
+    width: 530px;
+    z-index: 1;
+    padding-left: 35px;
+    border-radius: 8px;
+    border: none;
+    position: relative;
+    left: 100px;
+}
+.location{
+    position: relative;
+    right: 85px;
+    top: 13px;
+    z-index: 1;
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.769);
+} 
+.dropdown{
+    z-index: 1;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.828);
+    position: relative;
+    left: 90px;
+    top: 15px;
+}
+.line{
+    z-index: 1;
+    font-size: 23px;
+    color: rgba(128, 128, 128, 0.73);
+    position: relative;
+    left:105px;
+    top: 15px;
+}
+.searchicon{
+    color: rgba(128, 128, 128, 0.814);
+    z-index: 2;
+    font-size: 20px;
+    position: relative;
+    top: 16px;
+    left: 130px;
+}
+
+#order_type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    margin: 40px 0px 80px 0px;
+}
+.orders:first-child{
+    margin-left: 120px;
+}
+.orders:last-child{
+    margin-right: 120px;
+}
+.orders{
+    height: 240px;
+    width: 350px;
+    border: 1px solid rgba(128, 128, 128, 0.712);
+    border-radius: 15px;
+    background-color: white;
+    transition: 0.3s;
+}
+.orders:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.food{
+    height: 150px;
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
+}
+.h3{
+    color: rgba(69, 67, 67, 0.923);
+    padding: 10px 0px 10px  20px;
+    letter-spacing: 1px;
+}
+.para{
+    color: rgba(69, 67, 67, 0.749);
+    padding: 0px 0px 10px  20px;
+}
+.Collections{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 120px;
+   
+}
+.Collections h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding-bottom: 7px;
+}
+.Collections p{
+    font-size: 19px;
+    color: rgba(57, 57, 57, 0.786);
+}
+.Collections p span{
+    color: rgba(255, 0, 0, 0.657);
+    padding-left: 120px;
+}
+.Collections p span i{
+    padding-left: 10px;
+}
+#place_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0px 80px 0px;
+}
+.place1{
+    margin: 10px;
+    height: 310px;
+    width: 260px;
+    border-radius: 10px;
+}
+.place1:first-child{
+    margin-left: 110px;
+}
+.place1:last-child{
+    margin-right: 110px;
+}
+.place1 img{
+    border-radius: 10px;
+    height: 310px;
+    width: 260px;
+    cursor: pointer;
+    position: absolute;
+}
+.place1 p{
+    font-size: 20px;
+    padding-bottom: 6px;
+    color: white;
+}
+.place1 span i{
+    padding-left: 10px;
+}
+.num{
+    color: white;
+    margin-left: 20px;
+    position: relative;
+    top: 250px;
+}
+#popular h1{
+    color: rgba(52, 51, 51, 0.931);
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 110px;
+    margin-bottom: 40px;
+}
+#div{
+    display: block;
+    position: absolute;
+}
+.area{
+    width: 90%;
+    margin: 0px 110px 100px 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.area_list{
+    position: relative;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 70px;
+    max-width: 27%;
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.652);
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(182, 180, 180, 0.844),-1px -1px rgba(0, 0, 0, 0.792);
+}
+.area_list h2{
+    padding:10px 0px 6px 15px;
+    color: rgba(0, 0, 0, 0.792);
+}
+.area_list p{
+    padding: 0px 0px 0px 15px;
+    color: rgba(70, 69, 69, 0.912);
+}
+.area_list1{
+    position: relative;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 50px;
+    max-width: 27%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.792);;
+    border: 1px solid rgba(128, 128, 128, 0.652);
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(182, 180, 180, 0.844),-1px -1px rgba(0, 0, 0, 0.792);
+}
+.area_list1 i{
+    padding-left: 8px;
+    padding-top: 6px;
+}
+
+#row{
+    margin-top: 430px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 237, 239, 0.362);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#col1{
+    margin-top: 100px;
+}
+#col2{
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 450px;
+}
+.h1{
+    font-size: 45px;
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+.p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.746);
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+.input{
+    margin-bottom: 20px;
+}
+.input label{
+    font-size: 19px;
+    color:rgba(0, 0, 0, 0.752);
+    padding: 10px;
+    margin-right: 40px;
+}
+.Enter_email::placeholder{
+    font-size: 18px;
+    font-weight: 100;
+}
+.Enter{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.Enter_email{
+    width: 250px;
+    height: 20px;
+    font-size: 16px;
+    padding: 13px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+.share{
+    padding: 13px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.626);
+    margin-bottom: 30px;
+}
+.pa{
+    color: rgba(128, 128, 128, 0.775);
+}
+
+#download_app{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+.Google_play img{
+    width: 150px;
+    border-radius: 10px;
+}
+.Microsoft img{
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 47px;
+}
+#explore{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 130px;
+    padding-bottom: 40px;
+    background-color: rgba(195, 194, 194, 0.086);
+}
+.exp1 h1{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 50px 0px 30px 0px;
+}
+.exp2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.763);
+    background-color: rgba(255, 255, 255, 0.629);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 80px;
+}
+
+#bottom{
+    background-color: rgba(128, 128, 128, 0.198);
+    padding-bottom: 60px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.zomato{
+    margin-top: 40px;
+    margin-left: 180px;
+    font-size: 18px;
+}
+.button{
+    margin-top: 40px;
+    margin-right: 100px;
+}
+.button button{
+    padding: 10px;
+    margin-right: 8px;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.button button i{
+    font-size: 15px;
+}
+
+.btn1{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 50px 0px 100px;
+}
+.btn1_child1{
+    width: 150px;
+    line-height: 30px;
+}
+.btn1_child1 div{
+    color: gray;
+    font-size: 15px;
+}
+.fonts i{
+    font-size: 20px;
+    padding-right: 4px;
+    color:black;
+}
+.micro{
+    margin-top: 20px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+}
+.goo{
+    width: 150px;
+    border-radius: 10px;
+}
+.hr{
+    margin: 50px 100px 20px 100px;
+}
+.copyrights{
+    margin: 0px 100px 20px 100px;
+    color: gray;
+    line-height: 20px;
+    font-size: 15px;
+}
